@@ -1,9 +1,10 @@
 //Install required packages:
 const inquirer = require('inquirer');
 const fs = require('fs');
+const path = require('path');
 
 //Import the generatelogo file:
-const logoGenerator = require('./utils/logoGenerator');
+const logoGenerator = require('./lib/logoGenerator');
 
 //Write down questions for the prompt:
 const questions = [
@@ -35,7 +36,8 @@ inquirer.prompt(questions).then(answers => {
 });
 
 function writeToFile(fileName, data){
-    fs.writeFile(fileName, data, (err) =>{
+    const filepath = path.join('examples', fileName);
+    fs.writeFile(filepath, data, (err) =>{
         if (err) {
             console.log(err);
         } else {
