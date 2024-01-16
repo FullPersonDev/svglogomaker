@@ -1,5 +1,5 @@
 
 <svg xmlns='http://www.w3.org/2000/svg' width='300' height='200'>
-    <rect width='160' height='160' x='70' y='20'  fill='red'/>
-    <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='wite' font-size='48'>SVG</text>
+    <polygon points='150,20 220,180 80,180'  fill='blue'/>
+    <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='yellow' font-size='48'>SVG</text>
 </svg>
