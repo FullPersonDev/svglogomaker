@@ -5,7 +5,7 @@ class Shape {
     }
 
     generateSVG() {
-        return `<${this.type} width='100' height='100' fill='${this.color} />`;
+        return ` fill='${this.color}'/>`;
     }
 }
 
@@ -14,7 +14,7 @@ class Triagle extends Shape {
         super('polygon', color);
     }
     generateSVG() {
-        return `<polygon points='50,0 100,100 0,100' ${super.generateSVG().slice(1)}`;
+        return `<polygon points='150,20 220,180 80,180' ${super.generateSVG()}`;
     }
 }
 
@@ -23,7 +23,7 @@ class Circle extends Shape {
         super('circle', color);
     }
     generateSVG() {
-        return `<circle cx='50' cy='50' r='50' ${super.generateSVG().slice(1)}`;
+        return `<circle cx='150' cy='100' r='80' ${super.generateSVG()}`;
     }
 }
 
@@ -32,7 +32,7 @@ class Square extends Shape {
         super('rect', color);
     }
     generateSVG() {
-        return `<rect width='100' height='100' ${super.generateSVG().slice(1)}`;
+        return `<rect width='160' height='160' x='70' y='20' ${super.generateSVG()}`;
     }
 }
 
