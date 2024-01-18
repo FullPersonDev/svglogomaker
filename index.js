@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
 
-//Import the generatelogo file:
+//Import the logoGenerator file:
 const logoGenerator = require('./lib/logoGenerator');
 
 //Write down questions for the prompt:
